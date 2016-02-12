@@ -120,6 +120,9 @@ module.exports = function (environment) {
 	if (process.env.POSTGRES_PORT) {
 		cfg.postgres.port = process.env.POSTGRES_PORT;
 	}
+	if (process.env.PORT) {
+		cfg.port = process.env.PORT;
+	}
 
 	return cfg;
 };
